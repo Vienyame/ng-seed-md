@@ -1,0 +1,98 @@
+{
+  "name": "ng-seed",
+  "version": "1.0.0",
+  "description": "An angular 1.x app starter",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1 ./src",
+
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js --single-run",
+
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor e2e-tests/protractor.conf.js"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Vienyame EDORH-TOSSA <vienyame.edorh@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "1.7.9",
+    "browser-sync": "2.12.10",
+    "browser-sync-spa": "1.0.3",
+    "chalk": "1.1.3",
+    "del": "2.2.0",
+    "eslint-plugin-angular": "1.0.1",
+    "glob": "7.0.3",
+    "gulp": "3.9.1",
+    "gulp-angular-filesort": "1.1.1",
+    "gulp-angular-templatecache": "1.8.0",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-eslint": "2.0.0",
+    "gulp-filter": "4.0.0",
+    "gulp-flatten": "0.2.0",
+    "gulp-htmlhint": "0.3.1",
+    "gulp-inject": "4.1.0",
+    "gulp-jshint": "2.0.1",
+    "gulp-load-plugins": "1.2.4",
+    "gulp-minify-css": "1.2.4",
+    "gulp-minify-html": "1.0.6",
+    "gulp-ng-annotate": "2.0.0",
+    "gulp-ngdocs": "0.2.13",
+    "gulp-protractor": "^1.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-replace": "0.5.4",
+    "gulp-rev": "7.0.0",
+    "gulp-rev-replace": "0.4.3",
+    "gulp-sass": "2.3.1",
+    "gulp-scss-lint": "0.4.0",
+    "gulp-size": "2.1.0",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-uglify": "1.5.3",
+    "gulp-useref": "1.3.0",
+    "gulp-util": "3.0.7",
+    "gulp-zip": "3.2.0",
+    "http-proxy-middleware": "0.15.1",
+    "http-server": "0.9.0",
+    "jshint": "2.9.2",
+    "jshint-stylish": "2.2.0",
+    "karma": "0.13.22",
+    "karma-angular-filesort": "1.0.1",
+    "karma-coverage": "1.0.0",
+    "karma-jasmine": "1.0.2",
+    "karma-ng-html2js-preprocessor": "1.0.0",
+    "karma-phantomjs-launcher": "1.0.0",
+    "lodash": "4.13.1",
+    "main-bower-files": "2.13.1",
+    "phantomjs": "2.1.7",
+    "phantomjs-prebuilt": "2.1.7",
+    "plato": "1.5.0",
+    "protractor": "3.3.0",
+    "run-sequence": "1.2.1",
+    "uglify-save-license": "0.4.1",
+    "wiredep": "4.0.0",
+    "wrench": "1.5.9"
+  },
+  "dependencies": {
+    "bower": "^1.7.9",
+    "http-server": "^0.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vienyame/ng-seed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vienyame/ng-seed/issues"
+  },
+  "homepage": "https://github.com/Vienyame/ng-seed#readme",
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

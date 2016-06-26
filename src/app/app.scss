@@ -43,10 +43,33 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+html {
+  font-family: 'Roboto Slab', serif;
+}
 
+[layout=row] {
+  flex-direction: row;
+}
 main {
   padding: 20px;
   background: #fafafa;
+}
+md-toolbar.md-default-theme {
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  flex-flow: row wrap;
+
+  md-card {
+    width: 30%;
+
+    img.pull-right {
+      float: right;
+      width: 100px;
+    }
+  }
 }
 
 /**

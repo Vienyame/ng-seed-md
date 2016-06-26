@@ -16,6 +16,7 @@
     'ngAria',
     'ngResource',
     'ui.router',
+    'ngMaterial',
     'toastr'
   ]);
 

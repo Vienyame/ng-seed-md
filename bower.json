@@ -1,21 +1,24 @@
 {
-  "name": "ng-seed",
-  "description": "A starter project for AngularJS",
+  "name": "ng-seed-md",
+  "description": "A starter project for AngularJS with Material Design",
   "version": "0.0.0",
-  "homepage": "https://github.com/vienyame/ng-seed",
+  "homepage": "https://github.com/vienyame/ng-seed-md",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "angular": "1.5.6",
-    "angular-animate": "1.5.6",
-    "animate.css": "3.5.1",
+    "angular": "1.5.x",
+    "angular-animate": "1.5.x",
+    "animate.css": "3.5.2",
     "angular-toastr": "1.7.0",
-    "angular-resource": "1.5.6",
-    "angular-aria": "1.5.6",
-    "angular-messages": "1.5.6",
-    "angular-sanitize": "1.5.6",
-    "angular-cookies": "1.5.6",
-    "angular-ui-router": "0.3.0"
+    "angular-resource": "1.5.x",
+    "angular-aria": "1.5.x",
+    "angular-messages": "1.5.x",
+    "angular-sanitize": "1.5.x",
+    "angular-cookies": "1.5.x",
+    "angular-ui-router": "0.3.0",
+    "angular-material": "1.0.9",
+    "material-design-iconfont": "0.0.2",
+    "angular-touch": "1.5.7"
   },
   "ignore": [
     "**/.*",
@@ -23,9 +26,9 @@
     "bower_components"
   ],
   "devDependencies": {
-    "angular-mocks": "1.5.6"
+    "angular-mocks": "1.5.x"
   },
   "resolutions": {
-    "angular": "1.5.6"
+    "angular": "1.5.x"
   }
 }

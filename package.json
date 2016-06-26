@@ -1,5 +1,5 @@
 {
-  "name": "ng-seed",
+  "name": "ng-seed-md",
   "version": "1.0.0",
   "description": "An angular 1.x app starter",
   "main": "app.js",
@@ -86,12 +86,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vienyame/ng-seed.git"
+    "url": "git+https://github.com/Vienyame/ng-seed-md.git"
   },
   "bugs": {
-    "url": "https://github.com/Vienyame/ng-seed/issues"
+    "url": "https://github.com/Vienyame/ng-seed-md/issues"
   },
-  "homepage": "https://github.com/Vienyame/ng-seed#readme",
+  "homepage": "https://github.com/Vienyame/ng-seed-md#readme",
   "engines": {
     "node": ">=0.10.0"
   }

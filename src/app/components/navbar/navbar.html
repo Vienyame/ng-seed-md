@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
+<md-toolbar layout="row" layout-align="center center">
 
-</body>
-</html>
+  <md-button href="https://github.com/Vienyame/ng-seed-md">Angular seed</md-button>
+
+  <section flex layout="row" layout-align="left center">
+    <md-button href="#" class="md-raised">Home</md-button>
+    <md-button href="#" class="md-raised">About</md-button>
+    <md-button href="#" class="md-raised">Contact</md-button>
+  </section>
+
+  <md-button class="seed-navbar-text">Application was created {{ vm.relativeDate }}.</md-button>
+
+</md-toolbar>

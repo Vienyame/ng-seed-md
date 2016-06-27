@@ -18,7 +18,8 @@
     "angular-ui-router": "0.3.0",
     "angular-material": "1.0.9",
     "material-design-iconfont": "0.0.2",
-    "angular-touch": "1.5.7"
+    "angular-touch": "1.5.7",
+    "moment": "2.13.0"
   },
   "ignore": [
     "**/.*",

@@ -50,15 +50,32 @@ html {
 [layout=row] {
   flex-direction: row;
 }
-main {
+/*main {
   padding: 20px;
   background: #fafafa;
-}
+}*/
 md-toolbar.md-default-theme {
   background-color: black;
 }
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+section.jumbotron {
+  margin-bottom: 30px;
+  padding: 1px 30px;
+  background-color: #5aadbb;
+  text-align: center;
 
-.card {
+  color: white;
+
+  h1 {
+    font-size: 3em;
+  }
+}
+.techs {
   display: flex;
   flex-flow: row wrap;
 

@@ -12,13 +12,29 @@
    * ng-seed main controller
    * @example
    */
-  function MainController() {
+
+  /** @ngInject */
+  function MainController($timeout, toastr) {
     var vm = this;
 
     vm.hello = 'Hello World!';
     vm.feeling = '';
+    vm.creationDate = 1466960844950;
+    vm.showToastr = showToastr;
+
+    activate();
+
+    function activate() {
+      $timeout(function() {
+        vm.classAnimation = 'rubberBand';
+      }, 4000);
+    }
+
+    function showToastr() {
+      toastr.info('Fork <a href="https://github.com/Vienyame/ng-seed-md" target="_blank"><b>ng-seed-md</b></a>');
+      vm.classAnimation = '';
+    }
 
   }
 
-  MainController.$inject = [];
 })();

@@ -20,7 +20,7 @@
       path.join(conf.paths.src, '/app/**/*.scss')
     ], function(event) {
       if (isOnlyChange(event)) {
-        gulp.start('scss-lint--reload');
+        gulp.start('scss-lint-reload');
         gulp.start('styles-reload')
       } else {
         gulp.start('inject-reload');

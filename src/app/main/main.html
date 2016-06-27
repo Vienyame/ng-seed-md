@@ -1,9 +1,45 @@
-<p>
-  This is my Home page
-</p>
-<h1>{{main.hello}}</h1>
+<div layout="vertical" layout-fill>
 
-<div class="content">
-  <input type="text" ng-model="main.feeling" placeholder="type how you are feeling today"/>
-  <h2 class="feeling-text">Today i'm feeling {{main.feeling}}</h2>
+  <md-content>
+    <header>
+      <seed-navbar creation-date="main.creationDate"></seed-navbar>
+    </header>
+
+    <section class="jumbotron">
+      <h1>Please Welcome!</h1>
+
+      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
+
+    </section>
+
+
+    <div class="card" layout-align="center">
+      <md-card>
+        <md-card-content>
+          <h3 class="md-title">This is my Home page</h3>
+
+          <div class="pull-right">
+
+            <h2 class="feeling-text">Angular is the {{main.feeling}}</h2>
+            <input type="text" ng-model="main.feeling" placeholder="type how you are feeling today"/>
+          </div>
+        </md-card-content>
+        <div class="md-action-buttons">
+
+        </div>
+      </md-card>
+
+      <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
+        <md-card-content>
+          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
+          <h3 class="md-title">{{ awesomeThing.title }}</h3>
+          <p>{{ awesomeThing.description }}</p>
+        </md-card-content>
+        <div class="md-action-buttons">
+          <md-button ng-href="{{ awesomeThing.url }}">Website</md-button>
+        </div>
+      </md-card>
+    </div>
+  </md-content>
+
 </div>

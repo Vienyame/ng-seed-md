@@ -4,6 +4,7 @@
   angular.module('myApp')
   .config(mainConfig);
 
+  /** @ngInject */
   function mainConfig($stateProvider){
     $stateProvider
       .state('home', {
@@ -14,5 +15,4 @@
       });
   }
 
-  mainConfig.$inject = ['$stateProvider'];
 })();
